@@ -1,0 +1,42 @@
+* Jupyterlab with Docker Compose
+** usage
+*** git clone
+
+you clone this repo in github.
+
+#+begin_src
+git clone git@github.com:phyten/docker-jupyterlab.git
+#+end_src
+
+and chdir it.
+
+#+begin_src
+cd docker docker-jupyterlab
+#+end_src
+
+
+*** start jupyterlab
+
+if you use it in foreground,
+
+#+begin_src
+docker-compose up
+#+end_src
+
+so you can watch logs of the container jupyterlab is worked in immediately.
+
+if you use it in background,
+
+#+begin_src
+docker-compose up -d
+#+end_src
+
+and you can logs this command.
+
+#+begin_src
+docker-compose logs -t -f
+#+end_src
+
+*** browse
+
+open ~http://localhost:8888/~ in browser you use (chrome, firefox or edge).
